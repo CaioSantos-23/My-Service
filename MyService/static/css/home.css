@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* body {
+} */
+
+/* Header */
+#main-header{
+    display: flex;
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(21, 57, 99);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8%  1.5%;
+
+}
+/*_____________________________*/
+
+/* Myservice Logo*/
+#myservice-logo strong{
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+.link-a{
+    text-decoration: none;
+}
+#myservice-logo{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+#myservice-logo:hover{
+    font-size: 22px;
+}
+/*_____________________________*/
+
+/* informaçoes sobre*/
+#options-block{
+    display: flex;
+    align-items: center;
+
+}
+
+.span-informacao{
+    color: rgb(255, 255, 255);
+    transition: 1.5s;
+    font-family: Poppins;
+    cursor: pointer;
+    font-size: 19px;
+}
+/*.span-informacao:hover{
+    font-size: 19px;
+    font-weight: 600;
+    transform: scale(0.95);
+    transition: 1.5s;
+}*/
+#informacao-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 4rem;
+    gap: 3rem;
+}
+#div-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#svg-search{
+    width: 25.5px;
+    margin-top: 5px;
+    padding: 7px 5px 2px 5px ;
+
+    border-bottom: solid rgb(255, 255, 255)  2px;
+    border-left: solid rgb(255, 255, 255)  2px;
+    border-top: solid rgb(255, 255, 255)  2px;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;
+
+}
+#input-search{
+    border: solid rgb(255, 255, 255);
+    padding: 2px 2px 2px 2px ;
+    border-radius: none;
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    background: rgb(21, 57, 99) ;
+    outline: none;
+    color: #fff;
+}
+/*_____________________________*/
+
+/* login e cadastro*/
+
+#div-login-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem ;
+}
+
+
+#options-block #login{
+    width: 7rem;
+    height: 3.5vh;
+    border: solid 1px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 5rem;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: .5s;
+}
+#options-block #register{
+    width: 8rem;
+    height: 3.5vh;
+    /* border: solid 1px black; */
+    font-weight: 500;
+    border: none;
+    border-radius: 5rem;
+    color: rgb(21, 57, 99);
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: .5s;
+}
+
+#options-block #login:hover, #options-block #register:hover{
+    transform: scale(0.95);
+    transition: .5s;
+}
+/*_____________________________*/
+
+/* Section */
+#main-section{
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*_____________________________*/
+
+/* Footer */
+#main-footer{
+    color: rgb(21, 57, 99);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+#main-footer strong{
+    margin-left: .5%;
+    transition: .5s;
+}
+#main-footer strong:hover{
+    font-size: 13px;
+    transition: .5s;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/*  Section Banner*/
+#section-banner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 1rem;
+}
+
+
+
+.letra-banner1{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(30, 84, 145);
+    margin-bottom: 2rem ;
+    font-family: Poppins;
+}
+.letra-banner2{
+    font-size: 35px;
+    font-weight: 300;
+    font-family: Poppins;
+}
+.letra-banner3{
+    margin-top: 2rem ;
+    margin-left: 10rem;
+    font-size: 28px;
+    color: rgb(30, 84, 145);
+    font-family: Poppins;
+}
+.letra-banner4{
+    font-size: 30px;
+}
+
+#svg-ampulheta{
+    width: 60px;
+    margin-top: -4rem;
+    margin-left: 30rem;
+}
+
+#trabalhadores-banner{
+    width: 50rem;
+}
+/*_____________________________*/
+
+/* Section Proficao*/
+
+#section-proficao{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(21, 57, 99) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-proficao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.div-tipos-proficao{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.letra-proficao-principal{
+    font-size: 45px;
+    color: #fff;
+    font-weight: 500;
+}
+.card-proficao{
+    background: red;
+    width: 12rem;
+    height: 45vh;
+    
+}
+.proficao-eletricista-card{
+    background-image: url(../img/img-home/cardproficao/eletricista.webp);
+    background-size: cover;
+    background-position: center;
+    width: 12rem;
+    height: 45vh;
+    border: solid rgba(0, 0, 0, 0.881) 4px;
+    font-family: Poppins;
+    padding-top: 155%;
+    cursor: pointer;
+    transition: .5s;
+}
+.proficao-eletricista-card:hover{
+    transform: scale(1.25);
+    transition: .5s;
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+        
+}
+.proficao-ServiçoLimpeza-card{
+    background-image: url(../img/img-home/cardproficao/serviçolimpeza.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 12rem;
+    height: 45vh;
+    border: solid rgba(0, 0, 0, 0.881) 4px;
+    font-family: Poppins;
+    padding-top: 155%;
+    cursor: pointer;
+    transition: .5s;
+}
+.proficao-ServiçoLimpeza-card:hover{
+    transform: scale(1.25);
+    transition: .5s;
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+        
+}
+.proficao-programador-card{
+    background-image: url(../img/img-home/cardproficao/programador.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 12rem;
+    height: 45vh;
+    border: solid rgba(0, 0, 0, 0.881) 4px;
+    font-family: Poppins;
+    padding-top: 155%;
+    cursor: pointer;
+    transition: .5s;
+}
+.proficao-programador-card:hover{
+    transform: scale(1.25);
+    transition: .5s;
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+        
+}
+.proficao-marcineiro-card{
+    background-image: url(../img/img-home/cardproficao/marcineiro.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 12rem;
+    height: 45vh;
+    border: solid rgba(0, 0, 0, 0.881) 4px;
+    font-family: Poppins;
+    padding-top: 155%;
+    cursor: pointer;
+    transition: .5s;
+}
+.proficao-marcineiro-card:hover{
+    transform: scale(1.25);
+    transition: .5s;
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+}
+.proficao-encanador-card{
+    background-image: url(../img/img-home/cardproficao/encanador.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 12rem;
+    height: 45vh;
+    border: solid rgb(0, 0, 0) 4px;
+    font-family: Poppins;
+    padding-top: 155%;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+.proficao-encanador-card:hover{
+    transform: scale(1.25);
+    transition: .5s;
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+   
+}
+
+.letra-card{
+    font-family: Poppins;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    justify-self: end;
+    position:relative;
+    background: #000;
+    color: #fff;
+}
+/*_____________________________*/

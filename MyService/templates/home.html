@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyService</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename = 'css/home.css')}}">
+</head>
+<body>
+    <header id="main-header">
+        <a href="{{ url_for('home')}}" class="link-a"><h2 id="myservice-logo"><strong>MY</strong>SERVICE</h2></a>
+        <!--
+        <img src="myservice.png" alt="MyService Logo"> Alterar quando a logo estiver pronta. ]
+        --> 
+        <div id="options-block">
+                <div id="informacao-sobre">
+                    <span class="span-informacao">Sobre</span>
+                    <span class="span-informacao">Como Funciona</span>
+                    <span class="span-informacao">Ajuda</span>
+                    <span class="span-informacao">Trabalhe Conosco</span>
+                <div id="div-search">
+                    <span class="input-group-addon"><img  id="svg-search" src="{{ url_for('static', filename='img/img-home/svg/svg-search.svg')}}"></span>
+                    <input type="text" id="input-search" placeholder=" Procure aqui" />
+                </div>
+                </div>
+                <div id="div-login-cadastro">
+                
+                    <a href="{{ url_for('login')}}"><input id="login" type="button" value="Entrar" ></a>
+                    <a href="{{ url_for('cadastro')}}"><input id="register" type="button" value="Cadastre-se"></a>
+                </div> 
+        </div>
+    </header>
+
+    <section id="main-section">
+        <section id="section-banner">
+             <div class="banner">
+                <div class="frase-banner">
+                        <h1 class="letra-banner1" >Aqui você encontra serviços variados</h1>
+                        <h1 class="letra-banner2">Simplificamos a procura de  prestação de serviço para você focar no que realmente importa.</h1>
+                        <h1 class="letra-banner3">Agilizando seu tempo </h1><img src="{{ url_for('static' , filename='img/img-home/svg/ampulheta.svg')}}" id="svg-ampulheta" >
+                </div>
+                <div class="img-banner">
+                        <img src="{{ url_for('static' , filename = 'img/img-home/img/trabalhadores.jpg')}}" alt="" id="trabalhadores-banner">
+                </div>
+             </div>
+        </section>
+        <section id="section-proficao">
+          <div class="div-proficao">
+            <div>
+                <h1 class="letra-proficao-principal">Alguns dos Serviços que você encontrará</h1>
+            </div>
+            <div class="div-tipos-proficao">
+                <div class="card-proficao">
+                    <div class="proficao-eletricista-card">
+                        <h1 class="letra-card">Eletricista</h1>
+                    </div>
+                </div>
+                <div class="card-proficao">
+                    <div class="proficao-ServiçoLimpeza-card">
+                        <h1 class="letra-card">Serviço Limpeza</h1>
+                    </div>
+                </div>
+                <div class="card-proficao">
+                    <div class="proficao-programador-card">
+                        <h1 class="letra-card">Programador</h1>
+                    </div>
+                </div>
+                <div class="card-proficao">
+                    <div class="proficao-marcineiro-card">
+                        <h1 class="letra-card">Marceneiro</h1>
+                    </div>
+                </div>
+                <div class="card-proficao">
+                    <div class="proficao-encanador-card">
+                        <h1 class="letra-card">Encanador</h1>
+                    </div>
+                </div>
+                <!-- _________________________________________________________________ -->
+                
+                </div>
+            </div>
+           
+           </div>
+        </section>
+        <section id="trabalhe-conosco">
+                <div>
+                    
+                </div>
+
+        </section>
+    </section>
+
+    <footer id="main-footer">
+        Todos os direitos reservados &copy; 2024 | <strong>MyService</strong> 
+    </footer>
+</body>
+</html>

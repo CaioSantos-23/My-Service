@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename = 'css/cadastro.css')}}" >
+    <script type="text/javascript" src="{{ url_for('static' , filename = 'script/cadastro.js')}}" defer></script>
+    
+</head>
+<body>
+
+    <header id="main-header">
+        <a href="{{ url_for('home')}}"class="link-a"><h2 id="myservice-logo"><strong>MY</strong>SERVICE</h2></a>
+        <!--
+        <img src="myservice.png" alt="MyService Logo"> Alterar quando a logo estiver pronta. ]
+        --> 
+        <div id="options-block">
+                <div id="informacao-sobre">
+                    <span class="span-informacao">Sobre</span>
+                    <span class="span-informacao">Como Funciona</span>
+                    <span class="span-informacao">Ajuda</span>
+                    <span class="span-informacao">Trabalhe Conosco</span>
+                <div id="div-search">
+                    <span class="input-group-addon"><img  id="svg-search" src="{{ url_for('static', filename='img/img-home/svg/svg-search.svg')}}"></span>
+                    <input type="text" id="input-search" placeholder=" Procure aqui" />
+                </div>
+                </div>
+                <div id="div-login-cadastro">
+                
+                    <a href="{{ url_for('login')}}"><input id="login" type="button" value="Entrar" ></a>
+                    <a href="{{ url_for('cadastro')}}"><input id="register" type="button" value="Cadastre-se"></a>
+                </div> 
+        </div>
+    </header>
+
+    <section id="main-section">
+
+
+            <section id="cadastro-section">
+                <div class="div-texto">
+                    <h1 class="div-texto-letra1">Crie seu ID MYservice</h1>
+                    <h2 class="div-texto-letra2"> Um ID Myservice é o que você precisa para acessar todos os serviços do MYservice.</h2>
+                </div>
+                <div id="div-cadastro">
+                    <div>
+                    <form action="#" id="clienteCadastroForm" method="post">
+                        <p id="msgErroCliente">As senhas não são iguais</p>
+                        <div class="div-cadastro-informacao-nome">
+                            <div class="div-cadastro-informacao-nome-label">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nomeCliente" placeholder=" Nome" >
+                            </div>
+                            <div class="div-cadastro-informacao-nome-label">
+                                <label for="nome">Sobrenome</label>
+                                <input type="text" name="sobrenomeCliente" placeholder=" Sobrenome" >
+                            </div>
+                        </div>
+                        </div>
+                        <div class="div-cadastro-informacao">
+                            <label for="email">Email</label>
+                            <input type="text" name="emailCliente" placeholder=" nome@exemple.com" >
+                        </div>
+                        <div class="div-cadastro-informacao">
+                            <label for="cpf">CPF</label>
+                            <input type="text" name="cpfCliente" placeholder=" CPF" >
+                        </div>
+                        <div class="div-cadastro-informacao">
+                            <label for="senhaCliente">Senha</label>
+                            <input type="password" name="senhaCliente" id="senhaCliente" placeholder=" Senha" >
+                            <label for="repetirSenhaCliente">Confirma Senha</label>
+                            <input type="password" name="repetirSenhaCliente" id="repetirSenhaCliente" placeholder=" Confirma Senha" >
+                        </div>
+                        <div class="div-cadastro-numero-estado-cidade">
+                            <div class="div-cadastro-informacao">
+                                <label for="numeroCliente">Numero</label>
+                                <input type="text" name="numeroCliente" placeholder=" Digite Seu numero" >
+                        </div>
+                        <div class="div-cadastro-informacao">
+                            <label for="estadoCliente">Estado</label>
+                            <input type="text" name="estadoCliente" placeholder=" Digite Seu Estado" >
+                        </div>
+                        <div class="div-cadastro-informacao">
+                            <label for="cidadeCliente">Cidade</label>
+                            <input type="text" name="cidadeCliente" placeholder=" Digite Sua Cidade" >
+                        </div>
+                        </div>
+                        <input type="submit" value="enviar" class="bnt-enviar">
+                </form>
+                </div>
+               
+            </section>
+    </section>
+</body>
+</html>

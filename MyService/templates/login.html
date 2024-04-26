@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static' , filename = 'css/login.css') }}">
+    <title>Login</title>
+</head>
+<body>
+    <header id="main-header">
+        <a href="{{ url_for('home')}}"class="link-a"><h2 id="myservice-logo"><strong>MY</strong>SERVICE</h2></a>
+        <!--
+        <img src="myservice.png" alt="MyService Logo"> Alterar quando a logo estiver pronta. ]
+        --> 
+        <div id="options-block">
+                <div id="informacao-sobre">
+                    <span class="span-informacao">Sobre</span>
+                    <span class="span-informacao">Como Funciona</span>
+                    <span class="span-informacao">Ajuda</span>
+                    <span class="span-informacao">Trabalhe Conosco</span>
+                <div id="div-search">
+                    <span class="input-group-addon"><img  id="svg-search" src="{{ url_for('static', filename='img/img-home/svg/svg-search.svg')}}"></span>
+                    <input type="text" id="input-search" placeholder=" Procure aqui" />
+                </div>
+                </div>
+                <div id="div-login-cadastro">
+                
+                    <a href="{{ url_for('login')}}"><input id="login" type="button" value="Entrar" ></a>
+                    <a href="{{ url_for('cadastro')}}"><input id="register" type="button" value="Cadastre-se"></a>
+                </div> 
+        </div>
+    </header>
+
+    <section id="main-section">
+        <div class="main-login">
+            <!--<div class="esquerda-login">
+                <h1>Faça login<br>E encontre seu serviço aqui</h1>
+                <img src="{{ url_for('static' , filename = 'img/img-login/svg/computador.svg')}}" class="esquerda-login-imagem" alt="animacao computador">
+            </div>-->
+            <div class="direita-login">
+                <div class="card-login">
+                    <h1>Iniciar sessão MYservice</h1>
+                    <div class="textfield">
+                        <label for="usuario">Usuário</label>
+                        <input type="text"nome="usuario" placeholder="E-mail ou número de telefone">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password"nome="senha" placeholder="Senha">
+                    </div>
+                    <a href="{{url_for('userhome')}}"><button class="btn-login">Login</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

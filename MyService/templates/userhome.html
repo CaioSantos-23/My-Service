@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Home</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename = 'css/userhome.css')}}">
+    <script type="text/javascript" src="{{ url_for('static' , filename = 'script/userhome.js')}}"></script>
+</head>
+<body>
+    <header id="main-header">
+        <a href="{{ url_for('home')}}" class="link-a"><h2 id="myservice-logo"><strong>MY</strong>SERVICE</h2></a>
+        <!--
+        <img src="myservice.png" alt="MyService Logo"> Alterar quando a logo estiver pronta. ]
+        --> 
+        <div id="options-block">
+                <div id="informacao-sobre">
+                    <span class="span-informacao">Sobre</span>
+                    <span class="span-informacao">Como Funciona</span>
+                    <span class="span-informacao">Ajuda</span>
+                    <span class="span-informacao">Trabalhe Conosco</span>
+                <div id="div-search">
+                    <span class="input-group-addon"><img  id="svg-search" src="{{ url_for('static', filename='img/img-home/svg/svg-search.svg')}}"></span>
+                    <input type="text" id="input-search" placeholder=" Procure aqui" />
+                </div>
+                </div>
+                
+                <div id="my-perfil" class="overlay">
+                        <a href="javascript:void(0)" class="closeBtn" onclick="closePerfil()">&times;</a>
+
+                        <div class="div-foto-perfil">
+                            <img src="{{ url_for('static', filename='img/img-username/foto perfil/janete.jpg')}}" alt="" class="foto-perfil">
+                        </div>
+                        <div class="overlay-content">
+                            <a href="#">Perfil</a>
+                            <a href="#">Notificações</a>
+                            <a href="#">Configurações</a>
+                            <a href="#">Privacidade</a>
+                            <a href="#">Ajuda</a>
+                            <a href="#">Sair do site</a>
+                        </div>
+                    </div>
+                    <button class="nav-button-perfil" onclick="openPerfil()">
+                        <i ><img src="{{ url_for('static', filename='img/img-username/foto perfil/janete.jpg')}}" alt="" class="foto-perfil-icon"></i>
+                        <!--<img class="icon-perfil" src="{{ url_for('static', filename='img/img-username/perfil.svg')}}" alt="">-->
+                    </button>
+                    </div> 
+                 </div> 
+                </div> 
+        </div>
+    </header>
+    <section id="main-section">
+
+
+    </section>
+</body>
+</html>
+
